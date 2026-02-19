@@ -1,1 +1,4 @@
 gitAccess.sh
+
+/.quarto/
+**/*.quarto_ipynb
