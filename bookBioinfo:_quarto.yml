@@ -1,0 +1,63 @@
+project:
+  type: book
+  output-dir: bookBioinfo
+
+book:
+  title: "Bioinformática I"
+  author: "Emilio García Morán"
+  language: es
+  date: last-modified
+  
+  chapters:
+    - index.qmd 
+    
+    - part: "I: Fundamentos"
+      chapters:
+        - unix-fasta.qmd
+        - python-bio.qmd
+        - virtualizacion.qmd
+        - r-bioestat.qmd
+        - practicas-fundamentos.qmd
+
+    - part: "II: Análisis de Secuencias"
+      chapters:
+        - secuenciacion-fastq.qmd
+        - alineamientoEnsamblaje-sam.qmd
+        - variantes-anotacion.qmd
+        - genetica-ordenador.qmd
+        - interpretacionSecuencias.qmd
+        - practicas-secuenciacion.qmd
+
+    - part: "III: Comparación de Secuencias"
+      chapters:
+        - dotplot.qmd
+        - BLAST.qmd
+        - MSA.qmd
+        - practicas-comparacion.qmd
+
+    - part: "IV: Evolución"
+      chapters:
+        - evolucionI.qmd # Filogenia morfologica y molecular, arboles, matriz de distancia ,UPGM Y NJ
+        - evolucionII.qmd # bootstrapping parsimonia. optimizacion por MLE y bayesiana
+
+    - part: "V: Biología de Sistemas"
+      chapters:
+        - sistemas-conceptos.qmd
+        - reduccion-modelos.qmd
+        - integracion-redes.qmd
+        - practicas-sistemas.qmd
+
+format:
+  pdf:
+    documentclass: scrbook
+    papersize: a4
+    toc: true
+    number-sections: true
+    colorlinks: true
+    highlight-style: monokai
+    pdf-engine: xelatex
+    geometry:
+      - top=30mm
+      - left=25mm
+      - right=25mm
+      - bottom=30mm
